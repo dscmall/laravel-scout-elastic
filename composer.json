@@ -2,6 +2,7 @@
     "name": "dscmall/laravel-scout-elastic",
     "description": "Elastic Driver for Laravel Scout",
     "keywords": ["laravel", "scout", "elasticsearch", "elastic"],
+    "license": "MIT",
     "require": {
         "php": ">=7.1.3",
         "laravel/scout": "^7.2",
