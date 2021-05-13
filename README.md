@@ -2,13 +2,6 @@
 
 This package provides a [Elasticsearch](https://www.elastic.co/products/elasticsearch) driver for Laravel Scout.
 
-## Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
 You can install the package via composer:
@@ -18,14 +11,6 @@ composer require dscmall/laravel-scout-elastic
 ```
 
 Laravel will automatically register the driver service provider.
-
-#### Install elasticsearch-php client
-
-For use this library we recomend using the latest version at this time `(^7.9)`
-
-```bash
-composer require elasticsearch/elasticsearch
-```
 
 ### Setting up Elasticsearch configuration
 
