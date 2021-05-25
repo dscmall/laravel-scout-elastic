@@ -21,7 +21,7 @@ class LaravelScoutElasticProvider extends ServiceProvider
             return new ElasticsearchEngine(
                 ClientBuilder::create()
                     ->setHosts(config('scout.elasticsearch.hosts'))
-                    ->setBasicAuthentication(config('scout.elasticsearch.username'), config('scout.elasticsearch.password'));
+                    ->setBasicAuthentication(config('scout.elasticsearch.username'), config('scout.elasticsearch.password'))
                     ->build()
             );
         });
