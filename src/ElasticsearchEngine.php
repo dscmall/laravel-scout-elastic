@@ -15,7 +15,7 @@ class ElasticsearchEngine extends Engine
      * @var string
      */
     protected $index;
-    
+
     /**
      * Elastic where the instance of Elastic|\Elasticsearch\Client is stored.
      *
@@ -51,7 +51,7 @@ class ElasticsearchEngine extends Engine
                 'update' => [
                     '_id' => $model->getKey(),
                     '_index' => $this->index,
-                    '_type' => $model->searchableAs(),
+                    // '_type' => $model->searchableAs(),
                 ]
             ];
             $params['body'][] = [
@@ -79,7 +79,7 @@ class ElasticsearchEngine extends Engine
                 'delete' => [
                     '_id' => $model->getKey(),
                     '_index' => $this->index,
-                    '_type' => $model->searchableAs(),
+                    // '_type' => $model->searchableAs(),
                 ]
             ];
         });
